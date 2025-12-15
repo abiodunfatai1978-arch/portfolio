@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ABDUL HAMEED ABDUL FATTAH | Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #00eaff;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #00eaff;
+      color: #000;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .project {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      background: #00eaff;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>ABDUL HAMEED ABDUL FATTAH</h1>
+    <p>Future Software Engineer | Web Developer | AI Enthusiast</p>
+    <button onclick="sayHello()">Hire Me</button>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am Abdul Hameed Abdul Fattah, a passionate and determined future
+      software engineer. I love building websites, games, and intelligent
+      systems. My goal is to create technology that inspires and impacts the world.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Web Design</span>
+      <span>Game Development</span>
+      <span>AI Concepts</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>⚽ Football Game (E-Football Inspired)</h3>
+      <p>A football game built with HTML and JavaScript featuring players and interactions.</p>
+    </div>
+
+    <div class="project">
+      <h3>🤖 Simple AI Chat</h3>
+      <p>A browser-based AI that responds to user questions using JavaScript logic.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <p>Location: Nigeria</p>
+  </section>
+
+  <script>
+  function sayHello() {
+    alert("Hello! Thank you for viewing my portfolio 🚀");
+  }
+
+  const sections = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+      const position = section.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (position < screenHeight - 100) {
+        section.classList.add("show");
+      }
+    });
+  });
+</script>
+
+
+  <footer>
+    <p>© 2025 Abdul Hameed Abdul Fattah. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function sayHello() {
+      alert("Hello! Thank you for viewing my portfolio 🚀");
+    }
+  </script>
+
+</body>
+</html>
